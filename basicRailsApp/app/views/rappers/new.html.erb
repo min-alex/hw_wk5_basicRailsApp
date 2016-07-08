@@ -1,0 +1,28 @@
+<h1>Add New Rapper</h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "name">Name</label>:
+
+<%= text_field :rappers, 'name' %></p>
+
+<p><label for = "hometown">Hometown</label>:
+
+<%= text_field :rappers, 'hometown' %></p>
+
+<p><label for = "latestAlbum">Latest Album</label>:
+
+<%= text_field :rappers, 'latestAlbum' %></p>
+
+<p><label for = "label">Label</label>:
+
+
+<%= text_field :rappers, 'label' %></p>
+
+<p><label for = "age">Age</label>:
+
+<%= text_field :rappers, 'age' %></p>
+
+<%= submit_tag "Create" %>
+
+<% end %>
+<%= link_to 'Back', {:action => 'index', :controller => 'rappers'} %>

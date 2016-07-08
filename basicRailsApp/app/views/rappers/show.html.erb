@@ -1,0 +1,10 @@
+Individual Rapper Index <br>
+
+Name: <%= @rapper.name %><br>
+Hometown: <%= @rapper.hometown %><br>
+Latest Album: <%= @rapper.latestAlbum %><br>
+Label: <%= @rapper.label %><br>
+Age: <%= @rapper.age %><br><br>
+
+<%= link_to "Back", {:action => 'index' }%>
+<%= link_to "Delete", @rapper, method: :delete %>

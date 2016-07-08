@@ -1,0 +1,14 @@
+<h1> Rappers Index Page </h1>
+
+<% @rappers.each do |rapper| %>
+	<p>
+		<%= link_to rapper.id, rapper %><br>
+		Name: <%= rapper.name %><br>
+		Hometown: <%= rapper.hometown %><br>
+		Latest Album: <%= rapper.latestAlbum %><br>
+		Label: <%= rapper.label %><br>
+		Age: <%= rapper.age %><br><br>
+	</p>
+<% end %>
+
+<%= link_to "Add New Rapper", {:action => 'new' }%>
