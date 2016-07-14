@@ -8,21 +8,13 @@ class RappersController < ApplicationController
 	end
 
 	def new
-		Rapper.new
+		@rapper = Rapper.new
 	end
 
 	def create
-		Rapper.create(rapper_params)
+		@rapper = Rapper.create(rapper_params)
 		redirect_to root_path
 	end	
-
-	def edit
-
-	end
-
-	def update
-
-	end
 
 	def destroy
 		Rapper.find(params[:id]).destroy
